@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/SheetTheme"
+    >
+
+  <TextView
+      android:id="@+id/location_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/screen_margin"
+      android:layout_marginTop="@dimen/screen_margin"
+      android:layout_marginBottom="@dimen/vertical_space_margin"
+      style="@style/SheetTitle"
+      />
+
+  <TextView
+      android:id="@+id/reader_settings_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingEnd="@dimen/screen_margin"
+      android:paddingStart="@dimen/screen_margin"
+      android:text="@string/reader_settings"
+      android:drawableStart="@drawable/ic_reader_settings"
+      android:drawablePadding="8dp"
+      style="@style/SheetButton"
+      />
+
+  <TextView
+      android:id="@+id/deauthorize_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingEnd="@dimen/screen_margin"
+      android:paddingStart="@dimen/screen_margin"
+      android:text="@string/deauthorize"
+      android:drawableStart="@drawable/ic_disconnect"
+      android:drawablePadding="8dp"
+      android:textColor="@color/red"
+      style="@style/SheetButton"
+      />
+
+</LinearLayout>
+
+

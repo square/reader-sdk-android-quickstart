@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_margin"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="@dimen/vertical_space_margin"
+      android:text="@string/enter_authorization_code"
+      style="@style/TitleText"
+      />
+
+  <android.support.design.widget.TextInputLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="@dimen/vertical_space_margin"
+      android:minWidth="@dimen/element_max_width"
+      android:hint="@string/authorization_code_hint"
+      >
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/authorization_code_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text|textNoSuggestions"
+        />
+  </android.support.design.widget.TextInputLayout>
+
+  <Button
+      android:id="@+id/authorize_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="@dimen/vertical_space_margin"
+      android:text="@string/authorize_button"
+      style="@style/ContainedButton"
+      />
+
+  <Button
+      android:id="@+id/cancel_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/cancel_button"
+      style="@style/OutlinedButton"
+      />
+
+</LinearLayout>
+

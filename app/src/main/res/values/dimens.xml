@@ -1,0 +1,9 @@
+<resources>
+  <dimen name="title_text_size">24sp</dimen>
+  <dimen name="button_text_size">20sp</dimen>
+  <dimen name="sheet_title">18sp</dimen>
+  <dimen name="button_corner_radius">4dp</dimen>
+  <dimen name="element_max_width">352dp</dimen>
+  <dimen name="vertical_space_margin">16dp</dimen>
+  <dimen name="screen_margin">32dp</dimen>
+</resources>

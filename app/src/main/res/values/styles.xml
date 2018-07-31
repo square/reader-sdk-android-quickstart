@@ -1,0 +1,67 @@
+<resources>
+
+  <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowBackground">@drawable/window_background</item>
+    <item name="android:alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert</item>
+  </style>
+
+  <style name="JewelTheme" parent="AppTheme">
+    <item name="android:windowBackground">@drawable/jewel_window_background</item>
+  </style>
+
+  <style name="TitleText" parent="android:Widget">
+    <item name="android:textSize">@dimen/title_text_size</item>
+  </style>
+
+  <style name="HelperText" parent="android:Widget">
+    <item name="android:textColor">@color/white_70p</item>
+    <item name="android:textSize">@dimen/button_text_size</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="ButtonBase" parent="Base.Widget.AppCompat.Button.Borderless">
+    <item name="android:shadowRadius">0</item>
+    <item name="android:textSize">@dimen/button_text_size</item>
+    <item name="android:paddingTop">@dimen/button_text_size</item>
+    <item name="android:paddingBottom">@dimen/button_text_size</item>
+    <item name="android:textAllCaps">false</item>
+  </style>
+
+  <style name="ButtonMainBase" parent="ButtonBase">
+    <item name="android:textColor">@color/button</item>
+    <item name="android:minWidth">@dimen/element_max_width</item>
+    <item name="android:gravity">center</item>
+    <item name="android:foreground">?android:attr/selectableItemBackground</item>
+  </style>
+
+  <style name="ContainedButton" parent="ButtonMainBase">
+    <item name="android:background">@drawable/contained_button</item>
+  </style>
+
+  <style name="OutlinedButton" parent="ButtonMainBase">
+    <item name="android:background">@drawable/outlined_button</item>
+  </style>
+
+  <style name="OutlinedButtonBlue70p" parent="ButtonMainBase">
+    <item name="android:background">@drawable/outlined_button_blue_70p</item>
+  </style>
+
+  <style name="SheetTitle" parent="android:Widget">
+    <item name="android:textColor">@color/grey</item>
+    <item name="android:textSize">@dimen/sheet_title</item>
+  </style>
+
+  <style name="SheetButton" parent="ButtonBase">
+    <item name="android:gravity">left</item>
+    <item name="android:textColor">@color/blue</item>
+    <item name="android:background">?attr/selectableItemBackground</item>
+  </style>
+
+  <style name="SheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="colorControlHighlight">@color/blue</item>
+  </style>
+
+</resources>

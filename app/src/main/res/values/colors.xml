@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">@color/blue</color>
+  <color name="colorPrimaryDark">@color/dark_blue</color>
+  <color name="colorAccent">@color/white</color>
+  <color name="blue">#4A90E2</color>
+  <!-- 70% alpha blue -->
+  <color name="blue_70p">#b34A90E2</color>
+  <color name="white">#FFFFFF</color>
+  <!-- 70% alpha white -->
+  <color name="white_70p">#b3FFFFFF</color>
+  <!-- 50% alpha white -->
+  <color name="white_50p">#80FFFFFF</color>
+  <color name="dark_blue">#3A71B0</color>
+  <!-- 50% alpha dark blue-->
+  <color name="dark_blue_50p">#803A71B0</color>
+  <color name="grey">#757575</color>
+  <color name="red">#FF3B30</color>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+  <string name="app_name">Reader SDK Example</string>
+  <string name="application_logo">Application Logo</string>
+  <string name="authorization_code_hint">Authorization code</string>
+  <string name="authorize_button">Authorize</string>
+  <string name="cancel_button">Cancel</string>
+  <string name="cannot_deauthorize_dialog_message">There are Square payments on this device that need to be uploaded. Please ensure you are connected to the Internet.</string>
+  <string name="cannot_deauthorize_dialog_title">Unable to deauthorize</string>
+  <string name="checkout_canceled_toast">Checkout canceled</string>
+  <string name="checkout_success_dialog_message">See Logcat for the transaction details. You can refund transactions on the Square Dashboard.</string>
+  <string name="checkout_success_dialog_title">%1s Successfully Charged</string>
+  <string name="checkout_title">Take a payment.</string>
+  <string name="deauthorize">Deauthorize</string>
+  <string name="enter_authorization_code">Enter an authorization code.</string>
+  <string name="error_dialog_title">Error</string>
+  <string name="generate_auth_code">Generate an authorization code in the Reader SDK tab in the Developer Portal.</string>
+  <string name="location_view_format">Location: %s</string>
+  <string name="manual_code_entry">Enter Code Manually</string>
+  <string name="network_error_dialog_title">Network error</string>
+  <string name="not_authorized">Authorize Reader SDK.</string>
+  <string name="not_supported_emulator">Not supported on emulator.</string>
+  <string name="ok_button">OK</string>
+  <string name="permission_request">Camera permission is required to display the camera preview.</string>
+  <string name="reader_settings">Reader Settings</string>
+  <string name="retry_button">Retry</string>
+  <string name="scan_qr_code">Scan QR Code</string>
+  <string name="scan_qr_code_title">Scan the QR Code.</string>
+  <string name="settings_button">Settings</string>
+  <string name="start_checkout">Charge %1s</string>
+</resources>

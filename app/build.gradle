@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 26
+  buildToolsVersion "27.0.3"
+  defaultConfig {
+    applicationId "com.example.readersdk"
+    minSdkVersion 19
+    targetSdkVersion 26
+    multiDexEnabled true
+  }
+
+  dexOptions {
+    preDexLibraries = true
+    jumboMode = true
+    keepRuntimeAnnotatedClasses false
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+configurations.all {
+  resolutionStrategy {
+    eachDependency { details ->
+      // Force all of the primary support libraries to use the same version.
+      if (details.requested.group == 'com.android.support'
+          && details.requested.name != 'multidex'
+          && details.requested.name != 'multidex-instrumentation') {
+        details.useVersion '26.0.2'
+      }
+    }
+  }
+}
+
+repositories {
+  google()
+  maven {
+    url "https://sdk.squareup.com/android"
+    credentials {
+      // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
+      username SQUARE_READER_SDK_APPLICATION_ID
+      // SQUARE_READER_SDK_REPOSITORY_PASSWORD is defined in ./gradle.properties
+      password SQUARE_READER_SDK_REPOSITORY_PASSWORD
+    }
+  }
+  jcenter()
+}
+
+dependencies {
+  def readerSdkVersion = "1.0.3"
+  // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
+  implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
+  runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
+  implementation 'com.android.support:appcompat-v7:26.0.2'
+  implementation 'com.android.support:multidex:1.0.3'
+
+  // QR Code scanning
+  implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
+}

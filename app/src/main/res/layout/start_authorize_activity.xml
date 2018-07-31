@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_margin"
+    >
+
+  <com.example.readersdk.JewelImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/screen_margin"
+      android:contentDescription="@string/application_logo"
+      android:src="@drawable/ic_jewel"
+      />
+
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/not_authorized"
+      style="@style/TitleText"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/generate_auth_code"
+      style="@style/HelperText"
+      />
+
+  <View
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      />
+
+  <Button
+      android:id="@+id/qr_code_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="@dimen/vertical_space_margin"
+      android:text="@string/scan_qr_code"
+      style="@style/ContainedButton"
+      />
+
+  <Button
+      android:id="@+id/manual_code_entry_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:text="@string/manual_code_entry"
+      style="@style/OutlinedButton"
+      />
+
+</LinearLayout>
+

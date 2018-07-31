@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <ViewStub
+      android:id="@+id/qr_code_stub"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:inflatedId="@+id/qr_code_reader"
+      android:layout="@layout/qr_code_reader"
+      />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"
+      android:background="@color/blue_70p"
+      android:gravity="center_horizontal"
+      android:paddingBottom="@dimen/screen_margin"
+      android:paddingTop="@dimen/screen_margin"
+      android:text="@string/scan_qr_code_title"
+      style="@style/TitleText"
+      />
+
+  <Button
+      android:id="@+id/cancel_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|center_horizontal"
+      android:layout_margin="@dimen/screen_margin"
+      android:text="@string/cancel_button"
+      style="@style/OutlinedButtonBlue70p"
+      />
+
+</FrameLayout>
