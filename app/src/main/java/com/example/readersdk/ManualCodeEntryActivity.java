@@ -2,11 +2,11 @@ package com.example.readersdk;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import com.example.readersdk.util.TextWatcherAdapter;
 
 public class ManualCodeEntryActivity extends AppCompatActivity {

@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
   compileSdkVersion 28
-  buildToolsVersion "27.0.3"
+  buildToolsVersion "28.0.3"
   defaultConfig {
     applicationId "com.example.readersdk"
-    minSdkVersion 21
+    minSdkVersion 26
     targetSdkVersion 28
     multiDexEnabled true
     versionCode 1020
@@ -20,19 +20,6 @@ android {
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
-  }
-}
-
-configurations.all {
-  resolutionStrategy {
-    eachDependency { details ->
-      // Force all of the primary support libraries to use the same version.
-      if (details.requested.group == 'com.android.support'
-          && details.requested.name != 'multidex'
-          && details.requested.name != 'multidex-instrumentation') {
-        details.useVersion '28.0.0'
-      }
-    }
   }
 }
 
@@ -55,8 +42,8 @@ dependencies {
   // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
   implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
   runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
-  implementation 'com.android.support:appcompat-v7:28.0.0'
-  implementation 'com.android.support:multidex:1.0.3'
+  implementation 'androidx.appcompat:appcompat:1.0.2'
+  implementation 'androidx.multidex:multidex:2.0.1'
 
   // QR Code scanning
   implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
