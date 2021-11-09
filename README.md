@@ -18,3 +18,6 @@ Follow the Reader SDK [Quick Start Guide](https://docs.connect.squareup.com/paym
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+## Feedback
+Leave a feedback for this sample app [here](https://delighted.com/t/DT6msOcY)!
