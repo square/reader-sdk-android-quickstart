@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 30
+  compileSdkVersion 31
   buildToolsVersion "30.0.3"
   defaultConfig {
     applicationId "com.example.readersdk"
@@ -39,11 +39,11 @@ repositories {
       password SQUARE_READER_SDK_REPOSITORY_PASSWORD
     }
   }
-  jcenter()
+  mavenCentral()
 }
 
 dependencies {
-  def readerSdkVersion = "1.5.1"
+  def readerSdkVersion = "1.5.4"
   // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
   implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
   runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
@@ -51,5 +51,5 @@ dependencies {
   implementation 'androidx.multidex:multidex:2.0.1'
 
   // QR Code scanning
-  implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
+  implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.2'
 }
