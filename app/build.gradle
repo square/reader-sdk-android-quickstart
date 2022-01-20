@@ -12,11 +12,6 @@ android {
     versionName "1.5"
   }
 
-  // Workaround for a conflicting dependencies issue in 1.5.1
-  packagingOptions {
-    exclude("META-INF/*.kotlin_module")
-  }
-
   dexOptions {
     preDexLibraries = true
     jumboMode = true
@@ -43,7 +38,7 @@ repositories {
 }
 
 dependencies {
-  def readerSdkVersion = "1.5.4"
+  def readerSdkVersion = "1.5.5"
   // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
   implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
   runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
