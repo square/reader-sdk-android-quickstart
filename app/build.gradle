@@ -44,7 +44,7 @@ repositories {
 }
 
 dependencies {
-  def readerSdkVersion = "1.5.5"
+  def readerSdkVersion = "1.5.6"
   // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
   implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
   runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
