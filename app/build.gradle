@@ -5,7 +5,7 @@ android {
   buildToolsVersion "30.0.3"
   defaultConfig {
     applicationId "com.example.readersdk"
-    minSdkVersion 21
+    minSdkVersion 24
     targetSdkVersion 30
     multiDexEnabled true
     versionCode 1050
@@ -44,7 +44,7 @@ repositories {
 }
 
 dependencies {
-  def readerSdkVersion = "1.5.6"
+  def readerSdkVersion = "1.6.1"
   // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
   implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
   runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
