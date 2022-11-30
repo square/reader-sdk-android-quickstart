@@ -8,15 +8,6 @@
   <uses-feature android:name="android.hardware.camera"/>
   <uses-feature android:name="android.hardware.camera.autofocus"/>
 
-  <!-- Developers who, contrary to Google Play Store recommendations, wish to stay
-       below Android API 31 should un-comment these lines:
-  <uses-permission tools:node="remove"
-       android:name="android.permission.BLUETOOTH_CONNECT" />
-  <uses-permission tools:node="remove"
-     android:name="android.permission.BLUETOOTH_SCAN"
-     android:usesPermissionFlags="neverForLocation"/>
-  -->
-
   <application
       android:name=".ExampleApplication"
       android:allowBackup="true"
