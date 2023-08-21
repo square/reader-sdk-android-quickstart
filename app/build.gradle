@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 32
+  compileSdkVersion 33
   buildToolsVersion "30.0.3"
   defaultConfig {
     applicationId "com.example.readersdk"
     minSdkVersion 24
-    targetSdkVersion 31
+    targetSdkVersion 33
     multiDexEnabled true
     versionCode 1050
     versionName "1.5"
@@ -44,7 +44,7 @@ repositories {
 }
 
 dependencies {
-  def readerSdkVersion = "1.7.4"
+  def readerSdkVersion = "1.7.5"
   // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
   implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
   runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
