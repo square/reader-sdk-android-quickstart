@@ -1,12 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 33
-  buildToolsVersion "30.0.3"
   defaultConfig {
     applicationId "com.example.readersdk"
     minSdkVersion 24
-    targetSdkVersion 33
+    targetSdkVersion 34
+    compileSdk 34
     multiDexEnabled true
     versionCode 1050
     versionName "1.5"
@@ -15,7 +14,9 @@ android {
   // The native libraries from Block are already stripped, and contain security
   // measures that can be disturbed if Gradle attempts to strip them again.
   packagingOptions {
-    doNotStrip "*/*/libregister.so"
+    jniLibs {
+      keepDebugSymbols += ['*/*/libregister.so']
+    }
   }
 
   dexOptions {
@@ -27,6 +28,7 @@ android {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
   }
+  namespace 'com.example.readersdk'
 }
 
 repositories {
@@ -44,7 +46,7 @@ repositories {
 }
 
 dependencies {
-  def readerSdkVersion = "1.7.5"
+  def readerSdkVersion = "1.7.6"
   // SQUARE_READER_SDK_APPLICATION_ID is defined in ./gradle.properties
   implementation "com.squareup.sdk.reader:reader-sdk-$SQUARE_READER_SDK_APPLICATION_ID:$readerSdkVersion"
   runtimeOnly "com.squareup.sdk.reader:reader-sdk-internals:$readerSdkVersion"
